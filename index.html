@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X_UA-Compatible" content=""IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Cyber Engineer</p>
+                    <h1>Hi, I'm <span>Muzakeer</span><br> From India</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -----------------about--------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="rower">
+                    <div class="about-col-1">
+                        <img src="images/Muzakeer Photo.JPG">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+                            Versions of the Lorem ipsum text have been used in typesetting at least since the 1960s,</p>
+                        
+                        <div class="tab-titles">
+                             <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                             <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                             <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills ">
+                            <ul>
+                                <li><span>Cyber Engineer</span><br>Ethical Hacking</li>
+                                <li><span>Web Developer</span><br>Web app Development</li>
+                                <li><span>Blockchain Developer</span><br>Creating Blockchain apps</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2021 - 2021 </span><br>Android Developer</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2019</span><br>B.Tech IT</li>
+                                <li><span>2021</span><br>Cyber Analyst - Ethical Hacking</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+        } 
+
+    </script>
+    </body>
+</html>
