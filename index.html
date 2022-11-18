@@ -6,6 +6,7 @@
         <meta name="viewport" content="width-device-width, initial-scale=1.0">
         <title>Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigins="anonymous"></script>
     </head>
     <body>
         <div id="header">
@@ -57,7 +58,7 @@
                         </div>
                         <div class="tab-contents" id="education">
                             <ul>
-                                <li><span>2019</span><br>B.Tech IT</li>
+                                <li><span>2019</span><br>B.Tech Information Technology</li>
                                 <li><span>2021</span><br>Cyber Analyst - Ethical Hacking</li>
                                 
                             </ul>
@@ -67,6 +68,50 @@
             </div>
         </div>
 
+        <!-- ------services------ -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-building-shield"></i>
+                        <br>
+                        <h2>Cyber Engineer</h2><br>
+                        <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+                            Versions </p>
+                            <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <br>
+                        <h2>Web Developer</h2><br>
+                        <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+                            Versions </p>
+                            <a href="#">Learn more...</a>
+                    </div>
+                    <div>
+                        
+                        <i class="fa-brands fa-creative-commons-nc"><br></i>
+                        
+                        <h2>Blockchain Developer</h2><br>
+                        <p>Lorem ipsum is typically a corrupted version of De finibus bonorum et malorum, a 1st-century BC text by the Roman statesman and philosopher Cicero, with words altered, added, and removed to make it nonsensical and improper Latin.
+                            Versions </p>
+                            <a href="#">Learn more...</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------------portfolio----------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
 
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
@@ -80,6 +125,8 @@
             {
                 tabcontent.classList.remove("active-tab");
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         } 
 
     </script>
