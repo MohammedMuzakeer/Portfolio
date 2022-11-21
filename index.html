@@ -13,13 +13,15 @@
             <div class="container">
                 <nav>
                     <img src="images/logo.png" class="logo">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Cyber Engineer</p>
@@ -148,6 +150,7 @@
                     <div class="contact-left">
                         <h1>
                             <h1 class="sub-title">Contact Me</h1>
+                            <!-- <br> -->
                             <p><i class="fa-solid fa-at"></i>dialme@muzakeer.tech</p>
                             <p><i class="fa-solid fa-phone"></i>+91 6385262317</p>
                             <div class="social-icons">
@@ -157,8 +160,9 @@
                                 <a href=""><i class="fa-brands fa-linkedin"></i></a>
                             </div>
                         </div>
-                        <a href="Images/logo.png" download ="btn btn2" class="btn btn2">Download CV</a>
-                        <div class="contact-right">
+                        <a href="Images/Mohammed -Muzakeer Resume.pdf" download ="Muzakeer_" class="btn btn2">Download CV</a>
+                </div>
+                    <div class="contact-right">
                     <form>
                         <input type="text" name="Name" placeholder="Your Name" required>
                         <input type="email" name="=email" placeholder="Your Email" required>
@@ -170,7 +174,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p> Copyright © Muzakeer <i class="fa-solid fa-heart"></i> </p>
+                <p> Copyright © All Rights Reserved. Made by Muzakeer <i class="fa-solid fa-heart"></i> </p>
             </div>
         </div>
 
@@ -189,6 +193,19 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         } 
+
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+            
+        }
+
 
     </script>
     </body>

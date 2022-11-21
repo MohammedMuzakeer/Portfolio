@@ -4,14 +4,19 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: azure;
 }
 #header{
+    /* margin-top: 5px; */
+    margin-right: 25px;
     width: 100%;
     height: 100vh;
-    background-image: url(images/Background\ Image.jpg);
+    background-image: url(Images/background.png);
     background-size: cover;
     background-position: center;
 }
@@ -25,7 +30,11 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
+    margin-top: 20px;
+    width: 250px;
+    image-resolution: 100px;
+    border-image-source: none;
+    
 }
 nav ul li{
     display: inline-block;
@@ -63,7 +72,7 @@ nav ul li a:hover::after{
     margin-top: 20px;
 }
 .header-text h1 span{
-    color: #ff004f;
+    color:#60d9ee;
 }
 
 
@@ -213,12 +222,12 @@ nav ul li a:hover::after{
     flex-direction: column;
     padding: 0 40px;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     transition: height 0.5s;
 }
 .layer h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .layer a{
@@ -256,7 +265,7 @@ nav ul li a:hover::after{
 }
 /* -------------contact----------- */
 .contact-left{
-    flex-basis: 35%;
+    flex-basis: 30%;
 }
 .contact-right{
     flex-basis: 60%;
@@ -325,8 +334,71 @@ form btn2{
 }
  /* ------------------css small screen--------
  */
- @media only screen and (max-with: 600px){
-    #header{
-        background-image: url() ;
-    }  
+ nav .fas{
+    display: none;
  }
+ @media only screen and (max-width: 600px){
+    #header{
+        background-image: url(Images/background-600px.png) ;
+
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+
+    }  
+    .header-text h1{
+        font-size: 30px;   
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #60d9ee;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition:  right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 35px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+
+    }
+    .sub-title{
+        font-size: 40px;
+
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+}
