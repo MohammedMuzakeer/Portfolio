@@ -52,7 +52,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #ababab;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -120,7 +120,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #ff004f;
+    background: #60d9ee;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -135,7 +135,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #b54769;
+    color: #60d9ee;
     font-size: 14px;
 }
 .tab-contents{
@@ -337,7 +337,7 @@ form btn2{
  nav .fas{
     display: none;
  }
- @media only screen and (max-width: 500px){
+ @media only screen and (max-width: 600px){
     #header{
         background-image: url(Images/background-600px.png) ;
 
