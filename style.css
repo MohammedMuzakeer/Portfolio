@@ -11,6 +11,11 @@ body{
     background: #080808;
     color: azure;
 }
+.logo{
+    margin-top: 20px;
+    width: 250px;
+    image-resolution: 100px;
+}
 #header{
     /* margin-top: 5px; */
     margin-right: 25px;
