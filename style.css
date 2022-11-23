@@ -11,11 +11,11 @@ body{
     background: #080808;
     color: azure;
 }
-.logo{
+/* .logo{
     margin-top: 20px;
     width: 250px;
     image-resolution: 100px;
-}
+} */
 #header{
     /* margin-top: 5px; */
     margin-right: 25px;
@@ -37,7 +37,7 @@ nav{
 .logo{
     margin-top: 20px;
     width: 250px;
-    image-resolution: 100px;
+    /* image-resolution: 100px; */
     border-image-source: none;
     
 }
@@ -303,6 +303,7 @@ nav ul li a:hover::after{
 .btn.btn2{
     display: inline-block;
     background: #60d9ee;
+    font-size: 18px;
 }
 .contact-right form{
     width: 100%;
