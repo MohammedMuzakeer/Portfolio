@@ -106,7 +106,7 @@ nav ul li a:hover::after{
 }
 .sub-title{
     font-size: 40px;
-    font-weight: 600;
+    font-weight: 500;
     color: #fff;
     /* border-radius:  5px; */
 }
@@ -343,11 +343,12 @@ form btn2{
  nav .fas{
     display: none;
  }
- @media only screen and (max-width: 600px){
+ @media only screen and (max-width:500px){
     #header{
         background-image: url(Images/background-600px.png) ;
 
     }
+    
     .header-text{
         margin-top: 100%;
         font-size: 16px;
@@ -376,6 +377,15 @@ form btn2{
         margin: 35px;
 
     }
+    html, body {
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+        
+    }
+    
     nav ul .fas{
         position: absolute;
         top: 25px;
@@ -384,7 +394,7 @@ form btn2{
 
     }
     .sub-title{
-        font-size: 40px;
+        font-size: 30px;
 
     }
     .about-col-1, .about-col-2{
@@ -406,5 +416,9 @@ form btn2{
     }
     .copyright{
         font-size: 13px;
+    }
+    .logo{
+        margin-left: -20px;
+        width: 200px;
     }
 }
