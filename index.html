@@ -23,8 +23,9 @@
             <div class="container">
                 <nav>
                     <img src="Images/logo.png" class="logo" loading="eager">
+                    <div class="scroll-menu">
                     <ul id="sidemenu">
-                        <li><a href=".header">Home</a></li>
+                        <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#services">Services</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
@@ -32,6 +33,7 @@
                         <li><a href="https://github.com/MohammedMuzakeer">Github</i></a>&nbsp;&nbsp;&nbsp;<i class="fa-brands fa-github"></i></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
+                </div>
                     <i class="fas fa-bars" onclick="openmenu()"></i>
                 </nav>
                 <div class="header-text">
@@ -45,17 +47,27 @@
             <div class="container">
                 <div class="rower">
                     <div class="about-col-1">
-                        <img src="Images/Cyber Image.JPG" loading="eager">
+                        <center>
+                        <img src="Images/About-Us_Image.jpg" loading="eager">
+                    </center>
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1><br>
-                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, I'm Muzakeer.&nbsp;&nbsp;My relationship with Cyber Analysis started at young age and has become my life-long love.On this website, you'll discover some of the most changeling and intimate knowledge I've taken date.</p> 
+                        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hello, I'm Muzakeer.&nbsp;My relationship with Cyber Analysis started at young age and has become my life-long love.On this website, you'll discover some of the most changeling and intimate knowledge I've taken date. <p align="justify">                    </p> 
                         
                         <div class="tab-titles">
                              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
                              <p class="tab-links" onclick="opentab('experience')">Experience</p>
                              <p class="tab-links" onclick="opentab('education')">Education</p>
                              <p class="tab-links" onclick="opentab('licences')">Licences & Certifications</p>
+                        </div>
+                        
+                        <div class="tab-contents" id="skills">
+                            <ul>
+                                <li><span>Cyber Engineer</span><br>Ethical Hacking</li>
+                                <li><span>Web Developer</span><br>Web app Development</li>
+                                <li><span>Blockchain Developer</span><br>Creating Blockchain apps</li>
+                            </ul>
                         </div>
                         <div class="tab-contents active-tab" id="skills ">
                             <ul>
@@ -64,6 +76,7 @@
                                 <li><span>Blockchain Developer</span><br>Creating Blockchain apps</li>
                             </ul>
                         </div>
+                        
                         <div class="tab-contents" id="experience">
                             <ul>
                                 <li><span>2021 - 2021 </span><br>Android Developer</li>
@@ -103,7 +116,7 @@
                         <br>
                         <h2>Cyber Engineer</h2><br>
                         <p>Cybersecurity is the practice of protecting critical systems and sensitive information from digital attacks. Also known as information technology (IT) security, cybersecurity measures are designed to combat threats against networked systems and applications, whether those threats originate from inside or outside of an organization. </p>
-                            <a href="#">Learn more...</a>
+                            <a href="https://en.wikipedia.org/wiki/Security_engineering">Learn more...</a>
                     </div>
                     <div>
                         <i class="fa-solid fa-code"></i>
@@ -111,7 +124,7 @@
                         <h2>Web Developer</h2><br>
                         <p>A web developer is a programmer who develops World Wide Web applications using a client–server model. The applications typically use HTML, CSS and JavaScript in the client, PHP, ASP.NET (C#), Python, Node. js, Go or Java in the server, and http for communications between client and server.
                         </p>
-                            <a href="#">Learn more...</a>
+                            <a href="https://en.wikipedia.org/wiki/Web_developer">Learn more...</a>
                     </div>
                     <div>
                         
@@ -120,7 +133,7 @@
                         <h2>Blockchain Developer</h2><br>
                         <p>
                             A developer responsible for developing and optimizing blockchain protocols, crafting the architecture of blockchain systems, developing smart contracts and web apps using blockchain technology are commonly called blockchain developers. </p>
-                            <a href="#">Learn more...</a>
+                            <a href="https://en.wikipedia.org/wiki/Blockchain">Learn more...</a>
                     </div>
                 </div>
             </div>
@@ -190,13 +203,16 @@
                         <input type="email" name="Email" placeholder="Your Email" required>
                         <!-- <input type="contactNumber" name="Contact" placeholder="Your Contact Number" required> -->
                         <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                        
+                        <button type="submit" class="btn" <a="#" ></a>Submit</button>
                     </form>
                 </div>
                 </div> 
                 </div>
             </div>
             <div class="copyright">
+                <!-- <p><a href="https://www.w3schools.com/">Copyright © All Rights Reserved. Made by Muzakeer <i class="fa-solid fa-heart"></i></a></p> -->
+
                 <p> Copyright © All Rights Reserved. Made by Muzakeer <i class="fa-solid fa-heart"></i> </p>
             </div>
         </div>
@@ -211,12 +227,22 @@
             {
                 tablink.classList.remove("active-link");
             }
+            // for(tablink of tablinks)
+            // {
+            //     tablink.classList.remove("ac");
+            // }
             for(tabcontent of tabcontents)
             {
                 tabcontent.classList.remove("active-tab");
             }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-link");
+            }
             event.currentTarget.classList.add("active-link");
+            // event.currentTarget.classList.add("active-tab");
             document.getElementById(tabname).classList.add("active-tab");
+            document.getElementById(tabname).classList.add("active-link");
         } 
 
     </script>
