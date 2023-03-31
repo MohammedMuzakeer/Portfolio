@@ -4,9 +4,9 @@
     font-family: 'Poppins',sans-serif;
     box-sizing: border-box;
 }
-html{
-    scroll-behavior: smooth;
-}
+html {
+    scroll-behavior:smooth;
+  }
 body{
     background: #080808;
     color: azure;
@@ -16,6 +16,9 @@ body{
     width: 250px;
     image-resolution: 100px;
 } */
+.container scroll-menu{
+    scroll-behavior: smooth;
+}
 #header{
     /* margin-top: 5px; */
     margin-right: 25px;
@@ -27,6 +30,7 @@ body{
 }
 .container{
     padding: 10px 5%;
+    /* scroll-behavior: smooth; */
 }
 nav{
     display: flex;
@@ -47,6 +51,9 @@ nav ul li{
     margin: 1px 30px;
 
 }
+/* html{
+    scroll-behavior: smooth;
+} */
 nav ul li a{
     color: #fff;
     text-decoration: none;
@@ -96,7 +103,7 @@ nav ul li a:hover::after{
     
 }
 .about-col-1 img{
-    width: 100%;
+    width: 77%;
     border-radius: 15px;
     
 }
@@ -105,7 +112,8 @@ nav ul li a:hover::after{
 
 }
 .about-col-2 p{
-
+    font-size: 15px;
+    text-align: justify;
 }
 .sub-title{
     font-size: 40px;
@@ -279,10 +287,25 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
+    color: rgb(255, 255, 255);
     transition: background 0.5s;
 }
 .btn:hover{
+    background: #60d9ee;
+    
+}
+.btn1{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #60d9ee;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: background 0.5s;
+}
+.btn1:hover{
     background: #60d9ee;
     
 }
@@ -327,6 +350,9 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
+/* .sidemenu{
+    scroll-behavior: smooth;
+} */
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -353,6 +379,9 @@ form btn2{
     font-weight: 300;
     margin-top: 20px;
 }
+/* .copyright p{
+    ba
+} */
 .copyright i{
     color: #60d9ee;
 }
@@ -366,15 +395,23 @@ form btn2{
         background-image: url(Images/background-600px.png) ;
 
     }
+    /* 
+     */
     
     .header-text{
         margin-top: 100%;
         font-size: 16px;
 
     }  
+    .container scroll-menu{
+        scroll-behavior: smooth;
+    }
     .header-text h1{
         font-size: 30px;   
     }
+    /* html{
+        scroll-behavior: smooth;
+    } */
     nav .fas{
         display: block;
         font-size: 25px;
@@ -403,7 +440,9 @@ form btn2{
         overflow-x: hidden;
         
     }
-    
+    /* html{
+        scroll-behavior: smooth;
+    } */
     nav ul .fas{
         position: absolute;
         top: 25px;
@@ -425,7 +464,7 @@ form btn2{
         font-size: 13px;
     }
     .about-col-2 p{
-        width: 90%;
+        width: 100%;
     }
     .tab-links{
         font-size: 16px;
@@ -532,7 +571,23 @@ form btn2{
     .contact-right h1{
         padding-left: 22%;
     }
+    .btn1{
+        display: block;
+        margin: 50px auto;
+        width: fit-content;
+        border: 1px solid #60d9ee;
+        padding: 14px 50px;
+        border-radius: 6px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        transition: background 0.5s;
+    }
+    .btn1:hover{
+        background: #60d9ee;
+        
+    }
     /* .contact-left h1{
         padding-left: 25%;
     } */
-}
+     }
+    }
