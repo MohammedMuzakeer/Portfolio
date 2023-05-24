@@ -350,9 +350,9 @@ nav ul li a:hover::after{
     width: 100%;
 
 }
-/* .sidemenu{
+.sidemenu{
     scroll-behavior: smooth;
-} */
+}
 form input, form textarea{
     width: 100%;
     border: 0;
@@ -409,9 +409,9 @@ form btn2{
     .header-text h1{
         font-size: 30px;   
     }
-    /* html{
+    html{
         scroll-behavior: smooth;
-    } */
+    }
     nav .fas{
         display: block;
         font-size: 25px;
@@ -582,10 +582,10 @@ form btn2{
         color: rgb(0, 0, 0);
         transition: background 0.5s;
     }
-    .btn1:hover{
+    /* .btn1:hover{
         background: #60d9ee;
         
-    }
+    } */
     /* .contact-left h1{
         padding-left: 25%;
     } */
