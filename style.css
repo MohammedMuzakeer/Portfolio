@@ -443,6 +443,9 @@ form btn2{
     /* html{
         scroll-behavior: smooth;
     } */
+    html {
+    scroll-behavior:smooth;
+    }
     nav ul .fas{
         position: absolute;
         top: 25px;
@@ -476,6 +479,9 @@ form btn2{
     }
     .copyright{
         font-size: 13px;
+    }
+    .container scroll-menu{
+        scroll-behavior: smooth;
     }
     .logo{
         margin-left: -20px;
